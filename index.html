@@ -86,7 +86,7 @@
   .hero-yt-wrap {
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)scale(1.5);
     width: 100%; height: 100%;
     z-index: 0;
     overflow: hidden;
@@ -96,7 +96,7 @@
   .hero-yt-wrap iframe {
     position: absolute;
     top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)scale(1.5);
     width: max(177.78vh, 100%);
     height: max(100vh, 56.25vw);
     min-width: 100%;
@@ -201,10 +201,10 @@
     letter-spacing: .06em;
     text-decoration: none;
     border-radius: 2px;
-    transition: opacity .2s, transform .2s;
+    transition: opacity .2s, .2s;
     white-space: nowrap;
   }
-  .btn-p:hover { opacity: .87; transform: translateY(-1px); }
+  .btn-p:hover { opacity: .87;: translateY(-1px); }
   .btn-g {
     display: inline-block;
     border: 1px solid #c8c4bf;
@@ -295,8 +295,8 @@
     transition: all .45s ease;
   }
   .pain-list li:first-child { border-top: 1px solid var(--rule); }
-  .pain-list li.anim-ready { opacity: 1; transform: none; }
-  .pain-list li.vis { opacity: 1; transform: translateX(0); }
+  .pain-list li.anim-ready { opacity: 1;: none; }
+  .pain-list li.vis { opacity: 1;: translateX(0); }
   .pain-list li::before { content: '—'; color: var(--orange); flex-shrink: 0; }
 
   /* ─── STORY ─── */
@@ -453,8 +453,8 @@
     opacity: 1;
     transition: all .45s ease;
   }
-  .flow-step.anim-ready { opacity: 1; transform: none; }
-  .flow-step.vis { opacity: 1; transform: translateY(0); }
+  .flow-step.anim-ready { opacity: 1;: none; }
+  .flow-step.vis { opacity: 1;: translateY(0); }
   .flow-step:last-child { border-bottom: none; }
   .flow-num {
     width: 50px;
@@ -596,8 +596,8 @@
 
   /* ─── ANIMATIONS ─── */
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0;: translateY(20px); }
+    to { opacity: 1;: translateY(0); }
   }
   @keyframes scrollP {
     0%, 100% { opacity: .3; height: 32px; }
@@ -605,11 +605,11 @@
   }
   .rev {
     opacity: 1;
-    transform: none;
-    transition: opacity .6s ease, transform .6s ease;
+   : none;
+    transition: opacity .6s ease, .6s ease;
   }
-  .rev.anim-ready { opacity: 1; transform: none; }
-  .rev.vis { opacity: 1; transform: translateY(0); }
+  .rev.anim-ready { opacity: 1;: none; }
+  .rev.vis { opacity: 1;: translateY(0); }
 
   /* ─── RESPONSIVE ─── */
   @media (max-width: 900px) {
