@@ -179,7 +179,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    gap: 32px;
+    : 32px;
     pointer-events: all;
     animation: fadeUp .9s ease .22s both;
     flex-wrap: wrap;
@@ -190,7 +190,7 @@
     max-width: 420px;
   }
   .hero-ja strong { font-weight: 500; }
-  .hero-btns { display: flex; gap: 10px; flex-wrap: wrap; flex-shrink: 0; }
+  .hero-btns { display: flex; : 10px; flex-wrap: wrap; flex-shrink: 0; }
   .btn-p {
     display: inline-block;
     background: var(--orange);
@@ -224,7 +224,7 @@
     right: 48px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    : 8px;
     color: var(--light);
     font-size: .58rem;
     letter-spacing: .25em;
@@ -248,7 +248,7 @@
     margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    : 10px;
   }
   .lbl::before {
     content: '';
@@ -279,7 +279,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 260px 1fr;
-    gap: 72px;
+    : 72px;
     align-items: start;
   }
   .pain-list { list-style: none; }
@@ -288,7 +288,7 @@
     border-bottom: 1px solid var(--rule);
     display: flex;
     align-items: flex-start;
-    gap: 13px;
+    : 13px;
     font-size: .88rem;
     line-height: 1.85;
     opacity: 1;
@@ -315,7 +315,7 @@
   .reasons-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
+    : 1px;
     background: var(--rule);
     margin-top: 48px;
     border: 1px solid var(--rule);
@@ -369,7 +369,7 @@
     max-width: 760px;
     margin: 0 auto;
   }
-  .other-tags { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .other-tags { margin-top: 24px; display: flex; flex-wrap: wrap; : 8px; }
   .other-tag {
     background: var(--off);
     border: 1px solid var(--rule);
@@ -399,7 +399,7 @@
     margin-top: 44px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
+    : 1px;
     background: rgba(255,255,255,0.07);
     border: 1px solid rgba(255,255,255,0.07);
     border-radius: 4px;
@@ -740,7 +740,36 @@
     .cta-divider { display: none; }
     .cta-contact-row { gap: 28px; }
   }
-</style>
+.story-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+  }
+  .story-photo {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  }
+  .story-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+  @media (max-width: 900px) {
+    .story-layout {
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+    .story-photo {
+      width: 140px;
+      height: 140px;
+    }
+  }</style>
 </head>
 <body>
 
