@@ -382,24 +382,25 @@
     </p>
 
     <div class="gates">
-      <a href="#" class="gate-btn gate-medical">
-        <div class="gate-accent"></div>
-        <div class="gate-content">
-          <span class="gate-title">医療関係者の方はこちら</span>
-          <span class="gate-sub">病院・クリニック・医療／介護施設の方へ</span>
-        </div>
-        <span class="gate-arrow">→</span>
-      </a>
-      <a href="#" class="gate-btn gate-business">
-        <div class="gate-accent"></div>
-        <div class="gate-content">
-          <span class="gate-title">企業・個人事業主の方はこちら</span>
-          <span class="gate-sub">HP制作・動画制作が初めての方でも安心してご相談ください</span>
-        </div>
-        <span class="gate-arrow">→</span>
-      </a>
+  <a href="index.html-medical" class="gate-btn gate-medical">
+    <div class="gate-accent"></div>
+    <div class="gate-content">
+      <span class="gate-title">医療関係者の方はこちら</span>
+      <span class="gate-sub">病院・クリニック・医療／介護施設の方へ</span>
     </div>
-  </div>
+    <span class="gate-arrow">→</span>
+  </a>
+
+  <a href="index.html" class="gate-btn gate-business">
+    <div class="gate-accent"></div>
+    <div class="gate-content">
+      <span class="gate-title">企業・個人事業主の方はこちら</span>
+      <span class="gate-sub">HP制作・動画制作が初めての方でも安心してご相談ください</span>
+    </div>
+    <span class="gate-arrow">→</span>
+  </a>
+</div>
+
 
 </section>
 
